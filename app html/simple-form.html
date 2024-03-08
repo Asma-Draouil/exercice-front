@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Mon formulaire</title>
+    <style>
+        .al {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form class="al">
+        <h2>Inscription</h2>
+        <label for="nom">Nom</label>
+        <input type="text" id="nom" name="nom" placeholder="Nom" pattern="[A-Za-z' ]{2,30}" required>
+        <br>
+        <label for="prenom">Prenom</label>
+        <input type="text" id="prenom" name="prenom" placeholder="Prenom" pattern="[A-Za-z' ]{2,30}" required>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" id="age" name="age" min="18" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="adresse email" required>
+        <br>
+        <label for="mdp">Mot de passe</label>
+        <input type="password" id="mdp" name="mot de passe" placeholder="mot de passe" required>
+        <br>
+        <label for="adresse">Adresse</label>
+        <textarea id="adresse" name="adresse" required></textarea>
+        <br>
+        <label for="date">Date de naissance</label>
+        <input type="date" id="date" name="date" required>
+        <br>
+            <h4>Redoublement :</h4>
+            <label for="oui">Oui</label>
+            <input type="radio" id="oui" name="rdb">
+            <label for="non">Non</label>
+            <input type="radio" id="non" name="rdb">
+        <br>
+        <label for="Université">Université</label>
+        <select id="Université" name="Université">
+            <option value="ENSIT">ENSIT</option>
+            <option value="ENIS">ENIS</option>
+            <option value="ENIG">ENIG</option>
+        </select>
+        <br>
+        <input type="checkbox" id="accepte" name="accepte">
+        <label for="accepte">J'ai lu et j'accepte</label>
+        <br>
+        <input type="submit" value="valider">
+        <input type="reset" value="vider">
+
+    </form>
+</body>
+
+</html>
