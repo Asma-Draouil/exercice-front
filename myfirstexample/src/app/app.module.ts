@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DrivenfComponent } from './drivenf/drivenf.component';
 import { FormsModule } from '@angular/forms';
+import { ExerciceComponent } from './exercice/exercice.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    DrivenfComponent
+    DrivenfComponent,
+    ExerciceComponent
   ],
   imports: [
     BrowserModule,
